@@ -1,0 +1,188 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: aliceblue;
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .img {
+      position: relative;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      object-fit: cover;
+      border: 4px solid transparent;
+    }
+    .__text {
+      text-align: center;
+    }
+    .__name {
+      overflow: hidden;
+      border-right: 0.15em solid #000; /* Adjust the color and width of the typing cursor */
+      white-space: nowrap;
+      margin: 0;
+      letter-spacing: 0.15em; /* Adjust the spacing between characters */
+      animation: typing 3s steps(40, end),
+        /* Adjust the duration as needed */ blink-caret 0.75s step-end infinite;
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #000; /* Adjust the color to match the background color behind the text */
+        }
+      }
+    }
+    .into__title {
+      height: 50px;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .intro__title__wrapper {
+        height: 100%;
+        animation: move 10s ease-in-out infinite alternate;
+
+        @keyframes move {
+          20% {
+            transform: translateY(-50px);
+          }
+          40% {
+            transform: translateY(-100px);
+          }
+          60% {
+            transform: translateY(-150px);
+          }
+          80% {
+            transform: translateY(-200px);
+          }
+          100% {
+            transform: translateY(-250px);
+          }
+        }
+        .intro__title__item {
+          height: 50px;
+          font-size: 30px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 7px;
+        }
+      }
+    }
+    .__socail_media_links {
+      margin-top: 5px;
+      width: 150px;
+      .__link {
+        align-items: center;
+        margin: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .__connect {
+          background: rgba(255, 255, 255, 0.3);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(11.5px);
+          -webkit-backdrop-filter: blur(11.5px);
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          margin: 7px;
+          cursor: pointer;
+          padding: 0px 20px;
+
+          transition: all 0.3s; /* Add the transition property for smooth animation */
+
+          &:hover {
+            transform: scale(
+              1.05
+            ); /* Increase the size of the element on hover */
+            background: rgba(
+              255,
+              255,
+              255,
+              0.5
+            ); /* Change the background color on hover */
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5); /* Change the box shadow on hover */
+          }
+          .__connect__text {
+            font-weight: bold;
+            font-size: 12px;
+          }
+        }
+
+        .__icon {
+          width: 40px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mouse {
+      width: 20px;
+      height: 30px;
+      border: 1px solid #f7f7f7;
+      border-radius: 20px;
+      cursor: pointer;
+      position: relative;
+      &::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ddd9d9;
+        border-radius: 50%;
+        opacity: 1;
+        animation: wheel 2s infinite;
+        -webkit-animation: wheel 2s infinite;
+      }
+    }
+
+    @keyframes wheel {
+      to {
+        opacity: 0;
+        top: 20px;
+      }
+    }
+
+    @-webkit-keyframes wheel {
+      to {
+        opacity: 0;
+        top: 20px;
+      }
+    }
+  }
+}
