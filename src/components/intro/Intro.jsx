@@ -12,7 +12,7 @@ const Intro = () => {
   return (
     <div className="intro">
       <div className="top">
-        <img src="/My_Linkedin_Pic.jpeg" className="img" alt="" />
+        <img src="/profile.png" className="img" alt="" />
         <h2 className="__text">
           Hello, My name is{" "}
           <span className="__name">{showName ? "Rajkumar Khatua" : ""}</span>
@@ -31,28 +31,34 @@ const Intro = () => {
         <div className="__socail_media_links">
           <div className="__link">
             <div className="__connect">
-              <span className="__connect__text">Follow me </span>
-              <img
-                src="../../../public/github_733609.png"
-                alt=""
-                className="__icon"
-              />
+              <a href="https://github.com/Rajkumar-Khatua" target="blank">
+                <span className="__connect__text">Follow me </span>
+                <img
+                  src="./public/github_733609.png"
+                  alt=""
+                  className="__icon"
+                />
+              </a>
             </div>
             <div className="__connect">
-              <span className="__connect__text">Follow me </span>
-              <img
-                src="../../../public/instagram_3955024.png"
-                alt=""
-                className="__icon"
-              />
+              <a href="https://www.instagram.com/i_am_raj.k.k20/">
+                <span className="__connect__text">Follow me </span>
+                <img
+                  src="./instagram_3955024.png"
+                  alt=""
+                  className="__icon"
+                />
+              </a>
             </div>
             <div className="__connect">
-              <span className="__connect__text">Follow me </span>
-              <img
-                src="../../../public/linkedin_145807.png"
-                alt=""
-                className="__icon"
-              />
+              <a href="https://www.linkedin.com/in/rajkumar-khatua-57154a20b/">
+                <span className="__connect__text">Connect me </span>
+                <img
+                  src="./public/linkedin_145807.png"
+                  alt=""
+                  className="__icon"
+                />
+              </a>
             </div>
           </div>
         </div>

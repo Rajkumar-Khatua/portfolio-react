@@ -1,6 +1,51 @@
-.Portfolio{
-    height: 100vh;
-    display: flex;
-    align-items: center;
+$breakpoint-small: 390;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;
 
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+.Portfolio {
+  padding:50px 100px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+
+  @include mobile {
+    padding: 20px 10px;
+  }
+
+  .__port__texts{
+      width: 60%;
+
+      @include mobile(){
+        width: 100%;
+      }
+    .__pro__title{
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 20px;
+
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+    .__pro__desc{
+      margin: 20px 0px;
+    }
+  }
+
+  .__pro__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  
+  }
 }

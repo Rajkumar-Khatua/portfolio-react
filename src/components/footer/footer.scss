@@ -1,0 +1,16 @@
+$primary-color: #ffbb00;
+$font-family: "Arial", sans-serif;
+$font-size: 14px;
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text {
+    color: $primary-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    text-align: center;
+    padding: 10px;
+  }
+}

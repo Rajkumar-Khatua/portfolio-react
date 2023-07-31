@@ -1,0 +1,140 @@
+$breakpoint-small: 390;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+.contact {
+  height: 100%;
+
+  .contact__wrapper {
+    padding: 50px;
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .contact__left {
+      flex: 1;
+      .__contact__title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        width: 80%;
+
+        @include mobile {
+          font-size: 25px;
+          text-align: center;
+        }
+      }
+      .contact__info {
+        .contact__info__item {
+          display: flex;
+          align-items: center;
+          margin: 50px 20px;
+          width: 70%;
+
+          @include mobile() {
+            margin: 20px 0px;
+            width: 100%;
+          }
+
+          .icon {
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            margin-right: 20px;
+            span {
+            }
+          }
+        }
+      }
+    }
+    .contact__right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .contact__desc {
+        font-weight: 200;
+
+        @include mobile {
+          text-align: center;
+          font-weight: 500;
+        }
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 20px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.35);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+
+        @include mobile() {
+          width: 85%;
+        }
+
+        input,
+        textarea {
+          padding: 10px 20px;
+          background: rgba(255, 255, 255, 0.35);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          margin-bottom: 20px;
+          outline: none;
+          transition: all 0.3s ease-in-out;
+          &:focus {
+            border: 1px solid #000;
+          }
+        }
+
+        button {
+          margin-top: 20px;
+          padding: 10px 20px;
+          border: none;
+          background: rgba(7, 0, 0, 0.726);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          font-weight: bold;
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          color: #fff;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background: #11998e;
+            background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+            background: linear-gradient(to right, #38ef7d, #11998e);
+
+            color: #ffffff;
+          }
+        }
+        .thank-you-message {
+          font-size: 18px;
+          color: #28a745;
+          margin-top: 15px;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

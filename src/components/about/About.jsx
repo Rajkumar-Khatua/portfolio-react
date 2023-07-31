@@ -1,6 +1,5 @@
 import React from "react";
 import "./about.scss";
-import LottieAbout from "../lottie/LottieAbout";
 const About = () => {
   return (
     <div className="about">
