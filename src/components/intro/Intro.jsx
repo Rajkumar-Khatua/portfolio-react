@@ -33,31 +33,19 @@ const Intro = () => {
             <div className="__connect">
               <a href="https://github.com/Rajkumar-Khatua" target="blank">
                 <span className="__connect__text">Follow me </span>
-                <img
-                  src="./public/github_733609.png"
-                  alt=""
-                  className="__icon"
-                />
+                <img src="./github_733609.png" alt="" className="__icon" />
               </a>
             </div>
             <div className="__connect">
               <a href="https://www.instagram.com/i_am_raj.k.k20/">
                 <span className="__connect__text">Follow me </span>
-                <img
-                  src="./instagram_3955024.png"
-                  alt=""
-                  className="__icon"
-                />
+                <img src="./instagram_3955024.png" alt="" className="__icon" />
               </a>
             </div>
             <div className="__connect">
               <a href="https://www.linkedin.com/in/rajkumar-khatua-57154a20b/">
                 <span className="__connect__text">Connect me </span>
-                <img
-                  src="./public/linkedin_145807.png"
-                  alt=""
-                  className="__icon"
-                />
+                <img src="./linkedin_145807.png" alt="" className="__icon" />
               </a>
             </div>
           </div>

@@ -40,11 +40,11 @@ const Contact = () => {
           </div>
           <div className="contact__info">
             <div className="contact__info__item">
-              <img src="../../../public/mail.png" alt="" className="icon" />
+              <img src="/mail.png" alt="" className="icon" />
               <span>rajkhatua2020@gmail.com</span>
             </div>
             <div className="contact__info__item">
-              <img src="../../../public/map.png" alt="" className="icon" />
+              <img src="/map.png" alt="" className="icon" />
               <span>India, Kolkata</span>
             </div>
           </div>

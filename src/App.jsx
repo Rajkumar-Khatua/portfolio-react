@@ -8,6 +8,7 @@ import Intro from "./components/intro/Intro";
 import Toggle from "./components/toggle/Toggle";
 import { ThemedContext } from "./context";
 import Footer from "./components/footer/Footer";
+import Skils from "./components/Skils/Skils";
 function App() {
   const theme = useContext(ThemedContext);
   const darkMode = theme.state.darkMode;
@@ -24,6 +25,7 @@ function App() {
       <Toggle />
       <Intro />
       <About />
+      <Skils />
       <Portfolio />
       <Contact />
       <Footer />

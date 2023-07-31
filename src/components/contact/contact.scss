@@ -64,7 +64,7 @@ $breakpoint-large: 1024px;
       justify-content: center;
 
       .contact__desc {
-        font-weight: 200;
+        font-weight: 400;
 
         @include mobile {
           text-align: center;
@@ -74,7 +74,7 @@ $breakpoint-large: 1024px;
       form {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 50%;
         margin-top: 20px;
         padding: 20px;
         background: rgba(255, 255, 255, 0.35);

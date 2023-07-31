@@ -10,7 +10,7 @@ const Projects = ({ img, link, title, desc }) => {
         <a href={link} target="blank" rel="noreferrer">
           <button class="card__button">
             <img
-              src="../../../public/github_733609.png"
+              src="/github_733609.png"
               className="icon"
               alt=""
             />
